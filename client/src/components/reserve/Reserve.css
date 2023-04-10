@@ -1,0 +1,186 @@
+.reserve {
+    /* border: 1px solid; */
+    width: 75%;
+    /* left: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.typeRow {
+    width: 100%;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: -1.5vmax;
+}
+
+.types h3 {
+    border: 1px solid blue;
+    width: 100%;
+    padding: 1vmax;
+    background-color: #0462a6;
+}
+
+.rContainer {
+    background-color: rgb(244, 244, 244);
+    /* padding: 2vmax; */
+    width: 100%;
+    overflow: auto;
+}
+
+.rClose {
+    position: absolute;
+    font-size: 1vmax;
+    cursor: pointer;
+    font-size: 2vmax;
+    bottom: -145%;
+    right: 0;
+    color: red;
+}
+
+.rItem {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+}
+
+
+.rInfo {
+    display: flex;
+    width: 100%;
+}
+
+.rInfo1 {
+    width: 100%;
+    margin-left: 2vmax;
+    color: #424242;
+
+}
+
+.rInfo:hover {
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+}
+
+.rInfo1 h2:hover {
+    color: #2793e1;
+    border-bottom: 2px solid;
+    width: fit-content;
+}
+
+.rInfo2 {
+    color: rgb(5, 196, 5);
+    font-size: 1.5vmax;
+    width: 100%;
+    margin-left: 2vmax;
+
+}
+
+.rInfo3 {
+    width: 100%;
+    margin-left: 2vmax;
+
+}
+
+.rInfo4 {
+    width: 100%;
+    margin-left: 2vmax;
+
+}
+
+
+.rTitle {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.rDesc {
+    font-weight: 300;
+    text-transform: capitalize;
+
+}
+
+.rMax {
+    font-size: 12px;
+}
+
+.rPrice {
+    font-weight: 500;
+}
+
+.rSelectRooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 80px;
+    color: rgb(240, 0, 0);
+}
+
+input disabled{
+    background-color: red;
+}
+.room label{
+    font-size: 1.3vmax;
+}
+ 
+.room {
+    padding: 0.4vmax;
+    display: flex;
+    align-items: center;
+}
+
+.closeBtn{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.closebtn,
+.rButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    /* width: 100%; */
+    margin-top: 20px;
+}
+.closebtn{
+    background-color: red;
+}
+
+@media screen and (max-width:660px) {
+    .reserve{
+        width: 100%;
+    }
+    .typeRow{
+        height: 10vmax;
+    }
+    .types h3 {
+        font-size: 2vmax;
+    }
+    .rTitle{
+        font-size: 2.5vmax;
+    }
+    .rDesc{
+        font-size: 2vmax;
+
+    }
+    .rMax{
+       margin-left: -0.5vmax; 
+       color: crimson;
+    }
+    .rInfo3,
+    .rInfo4 label,
+    .rInfo2 p{
+        font-size: 2vmax;
+    }
+    
+}

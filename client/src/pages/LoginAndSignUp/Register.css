@@ -1,0 +1,81 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/formbg2.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
+}
+
+.register .form{
+    
+    width: 25vw;
+    height: 60vh;
+    /* text-align: center; */
+}
+
+.registerForm{
+     overflow: hidden;
+      
+}
+
+.registerForm input{
+     
+    padding: 0.8vmax;
+    font: 400 1.5vmax  "Roboto";
+    color: #fff;
+    outline: none;
+    border-radius: 3px;
+    background-color: rgba(255, 254, 254, 0.071);
+}
+
+.registerForm label{
+    text-align: left;
+    color: rgb(235, 235, 235);
+    font: 400 1.5vmax  "Roboto";
+     
+}
+
+.registerForm label::after{
+    content: "*";
+    color: rgb(255, 56, 56);
+}
+
+.formBtn{
+    width: 100%;
+    padding-top: 0.8vmax;
+    background-color: #1aacfa58;
+    outline: none;
+    font: 400 1.5vmax  "Roboto";
+    color: #fff;
+    border: none;
+    margin-top: 1.5vmax;
+}
+.formBtn:hover{
+    background-color: #31aef09e;
+}
+
+.allreadyLogin{
+    text-align: left;
+    margin-top: 1vmax;
+    color: white;
+    font: 400 1.3vmax "Roboto";
+}
+
+.allreadyLogin a{
+    color: rgb(228, 228, 243);
+    font: 400 1.3vmax "Roboto";
+}
+
+.allreadyLogin a:hover{
+    color: rgb(52, 145, 237);
+}
+
+@media screen and (max-width:660px) {
+    .register .form{
+        width: 45vw;
+    }
+}

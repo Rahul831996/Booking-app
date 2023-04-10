@@ -1,0 +1,83 @@
+.navbar{
+    height: 50px;
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navContainer{
+    width: 75%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navContainer .logo{
+    font-weight: 400;
+    font-size: 2vmax;
+    color: rgb(229, 229, 229);
+  }
+  
+  .navItems .navButton{
+    margin-left: 20px;
+    border: none;
+    padding: 0.5vmax 0.8vmax;
+    cursor: pointer;
+    font-size: 1vmax;
+    background-color: #d2d4d89f;
+    color: #02367f;
+  }
+
+  .profile {
+    width: 4vmax;
+  }
+
+  .isAuthenticated{
+    margin-top: 1vmax;
+    position: relative;
+    z-index: 2;
+  }
+
+  .isAuthenticated img{
+    width: 3vmax;
+    color: white;
+
+  }
+
+  .img_name{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img_name span{
+    color: rgb(205, 204, 204);
+  }
+  .hide a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vmax;
+  }
+
+  .hide{
+    position: absolute;
+  }
+
+  .hide p{
+    cursor: pointer;
+    margin-top: -0.1vmax;
+    font-size: 1.2vmax;
+  }
+
+  @media screen and (max-width:660px) {
+    .navContainer{
+      width: 100%;
+    }
+    .img_name span{
+      font-size: 1vmax;
+      margin-right: 1.5vmax;
+
+    }    
+  }

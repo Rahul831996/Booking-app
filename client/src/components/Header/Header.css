@@ -1,0 +1,280 @@
+.header {
+    background-color: #003580;
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 75%;
+    /* max-width: 100%; */
+    margin-bottom: 2.2vmax;
+}
+
+.headerContainer.listMode {
+    margin: 1.5vmax 0px 0px 0px;
+}
+
+.headerList {
+    display: flex;
+    gap: 3vmax;
+    margin-bottom: 6vmax;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    cursor: pointer;
+}
+
+.headerListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerListItem span {
+    font-size: 1vmax;
+}
+
+.headerListItem svg {
+    font-size: 1vmax;
+}
+
+.headerTitle {
+    font-size: 3vmax;
+}
+
+.headerDesc {
+    font-size: 1.3vmax;
+}
+
+.headerBtn {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 1.3vmax;
+    cursor: pointer;
+    border-left: 3px solid #febb02;
+}
+.headerBtn:hover{
+    background-color: #3389c6;
+}
+
+.headerSearch {
+    height: 2vmax;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 5px;
+    gap: 0;
+    position: absolute;
+    /* bottom: -1vmax; */
+    width: 75vw;
+    
+}
+ 
+.headerIcon {
+    color: rgb(160, 159, 159);
+    font-size: 1vmax;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    width: 25vmax;
+    font-size: 1.1vmax;
+}
+
+.headerSearchText {
+    color: rgb(135, 135, 135);
+    cursor: pointer;
+    font-size: 1vmax;
+
+}
+
+.date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+     
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 3.4vmax;
+    right: 10%;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+    width: 15vmax;
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5vmax;
+    color: rgb(137, 137, 137);
+}
+
+.optionCounterButton {
+    width: 2vmax;
+    margin-bottom: 1vmax;
+    height: 2vmax;
+    border: 1px solid #0071c2;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-size: 1.5vmax;
+    background-color: rgb(39, 119, 224);
+}
+ 
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
+ 
+
+@media screen and (max-width: 790px) {
+    .headerList{
+        gap: 2vmax;
+    }
+    .headerListItem.active{
+        border-radius: 12px;
+    }
+
+    .header{
+        width: 100%;
+        background-color: #003580;
+        
+    }
+    .headerIcon {
+        color: rgb(160, 159, 159);
+        font-size: 1.5vmax;
+    }
+    .headerListItem svg {
+        font-size: 0.8vmax;
+    }
+
+    .headerListItem span {
+        font-size: 1.5vmax;
+    }
+
+   .headerListItem{
+        gap: 0vmax;
+    }
+
+    .headerTitle {
+        font-size: 5vmax;
+    }
+
+    .headerDesc {
+        font-size: 1.8vmax;
+    }
+    .optionCounter{
+        text-align: center;
+        gap: 2px;
+    }
+    
+    .optionCounterButton{
+        padding: 0.1vmax;
+    }
+    .optionItem {
+        width: 13vmax;
+         
+    }
+    .optionText{
+        font-size: 1.2vmax;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .headerContainer {
+        width: 100%;
+    }
+
+    .headerListItem svg {
+        font-size: 1vmax;
+    }
+    .headerIcon {
+        color: rgb(160, 159, 159);
+        font-size: 1.5vmax;
+    }
+
+    .headerListItem span {
+        font-size: 1vmax;
+    }
+
+
+    .headerTitle {
+        font-size: 3vmax;
+    }
+
+    .headerDesc {
+        font-size: 1.6vmax;
+    }
+
+    .headerSearch {
+        width: 99%;
+    }
+
+    .header {
+        width: 100%;
+
+    }
+
+    .optionItem{
+        color: red;
+        font-size: 0.5vmax;
+    }
+    .headerSearchText {
+        font-size: 1.2vmax;
+
+    }
+    .date {
+        position: absolute;
+        top: 6vmax;
+        left: 8%;
+        z-index: 2;
+    }
+    
+     .options{
+        position: absolute;
+        top: 35px;
+         right: 17%;
+        /* width: 20vmax; */
+    } 
+   
+    .optionItem {
+        width: 13vmax;
+        font-size: 1vmax;
+         
+    }
+    .headerSearchInput{
+        width: 15vmax;
+    }
+    .headerBtn{
+       padding: 2vmax 0;
+    }
+}

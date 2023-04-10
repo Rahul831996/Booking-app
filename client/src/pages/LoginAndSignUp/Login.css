@@ -1,0 +1,113 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left, rgb(97, 146, 237), rgba(55, 55, 235, 0.84));
+  color: white;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 25vw;
+}
+
+.lContainer h1 {
+  color: rgb(224, 220, 220);
+  font: 400 3vmax "Roboto";
+  margin-left: 0.8vmax;
+}
+
+
+.lContainer label {
+  color: #dbdfe1;
+  margin-left: 0.8vmax;
+  font: 400 1.5vmax "Roboto";
+}
+
+.lContainer label::after {
+  content: "*";
+  color: rgb(242, 52, 52);
+}
+
+.lInput {
+  /* margin-bottom: 1.5vmax; */
+  /* border: none; */
+  outline: none;
+  padding: 0.8vmax;
+  background-color: rgba(240, 248, 255, 0);
+  font: 400 1.2vmax "Roboto";
+  color: #fffefe;
+}
+
+.lInput::placeholder {
+  color: #cac5c5;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #2598ea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lButton:focus {
+  background-color: rgb(43, 70, 226);
+}
+
+.lButton:disabled {
+  background-color: #2595e4d4;
+  cursor: not-allowed;
+}
+
+.gotoRegister {
+  margin-top: 1vmax;
+  color: #d2d4d5;
+  font: 400 1.2vmax "Roboto";
+  margin-left: 0.8vmax;
+
+}
+
+.gotoRegister a {
+  color: #061e2f;
+  font: 400 1vmax "Roboto";
+}
+
+.lContainer span {
+  margin-top: 1vmax;
+  color: rgb(214, 40, 40);
+  font: 400 1vmax "Roboto";
+}
+
+@media screen and (max-width:660px) {
+  .lContainer {
+    width: 60%;
+
+  }
+
+  .lContainer label {
+    font-size: 2.2vmax;
+  }
+
+  .lInput {
+    font-size: 1.8vmax;
+    margin-bottom: 2vmax;
+  }
+
+  .gotoRegister {
+    font-size: 1.8vmax;
+  }
+
+  .gotoRegister a {
+    font-size: 1.8vmax;
+  }
+
+  .lContainer span {
+    font-size: 1.8vmax;
+  }
+}

@@ -1,0 +1,112 @@
+ .mainContainer{
+  border: 1px solid red;
+ }
+
+.listWrapper {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  margin-left: 10%;
+}
+
+.listSearch {
+  /* flex: 1; */
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 1.8vmax;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem>label {
+  font-size: 1vmax;
+}
+
+.lsItem>input {
+  height: 2vmax;
+  border: none;
+  padding: 2px;
+}
+
+.lsItem>span {
+  height: 4vmax;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions {
+  padding: 0;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1vmax;
+}
+
+.lsOptionInput {
+  width: 5vmax;
+}
+
+.listSearch>button {
+  padding: 5px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 80%;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}
+
+@media screen and (max-width:660px) {
+  .listContainer {
+     width: 100%;
+     /* margin-left: -5vmax; */
+  }
+  .listWrapper{
+    margin-left: 0vmax;
+    gap: 0;
+    width: 100%;
+    padding-top: 1vmax;
+
+  }
+  .listSearch{
+    width: 15vmax;
+    
+  }
+  .lsItem span,
+  .lsItem input::placeholder{
+    font-size: 1.5vmax;
+  }
+  .lsOptionText{
+     
+    color: #017ddc;
+  }
+  .lsOptionItem{
+     width: 1vmax;
+     height: 4vmax;
+  }
+}

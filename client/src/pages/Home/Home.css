@@ -1,0 +1,15 @@
+.homeContainer{
+    margin-top: 5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vmax;
+
+}
+
+.homeContainer h1{
+    font-size: 1.8vmax;
+    color: rgb(131, 130, 130);
+}
+
+ 

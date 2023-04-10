@@ -1,0 +1,97 @@
+/* .header {
+  width: 100vw;
+  height: 3.5vmax;
+  
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+
+}
+
+.stcky-nav {
+  position: fixed;
+  margin-top: 1vmax;
+  transition: all 0.5s;
+  background-color: rgb(24, 56, 125);
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 20px;
+  height: 3vmax;
+}
+
+
+.header-1 {
+  width: 50vw;
+  text-decoration: none;
+}
+
+.header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-weight: 600;
+}
+
+.frt-div > span{
+  font-size: 1.5vmax;
+  font-style: oblique;
+}
+
+
+.sec-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   
+
+}
+
+.sec-div>a {
+  margin: 0 1vmax;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2vmax;
+
+}
+
+.sec-div>a:active {
+  border-bottom: 2px solid;
+}
+
+.trd-div {
+
+  display: flex;
+
+}
+
+.trd-div>div {
+  margin: 0 1vmax;
+}
+
+.userProfile img {
+  border-radius: 50%;
+  width: 2vmax;
+  height: 2vmax;
+  font-size: 12vmax;
+}
+.userProfile > span {
+  font-size: 1.3vmax;
+
+}
+
+
+
+@media screen and (max-width: 660px) {
+   
+  .frt-div > span {
+    font-size: 1.2vmax;
+  }
+  .sec-div > a{
+    font-size: 1.2vmax;
+  }
+  .userProfile > span {
+    font-size: 1.2vmax;
+
+  }
+} */

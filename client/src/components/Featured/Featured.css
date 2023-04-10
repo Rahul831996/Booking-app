@@ -1,0 +1,49 @@
+.featured {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8vmax;
+  z-index: 1;
+  height: 30vh;
+}
+
+.featuredItem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  height: 30vh;
+}
+
+.featuredImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.featuredTitles h1{
+  color: rgb(255, 255, 255);
+  font: 600 2vmax "Roboto";
+}
+
+@media screen and (max-width:660px) {
+
+  .featured{
+    width: 90vw;
+  }
+
+  .featuredItem {
+    gap: 1vmax;
+    height: 15vh;
+     
+  }
+  .featuredTitles{
+    font-size: 1vmax;
+  }
+}
